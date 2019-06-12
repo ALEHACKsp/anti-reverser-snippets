@@ -1,4 +1,4 @@
-# VMProtect/Themida virtualization guide
+# VMProtect virtualization guide
 
 ## Рандомизация секций кода
 
