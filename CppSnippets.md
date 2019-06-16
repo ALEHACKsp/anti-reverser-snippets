@@ -31,3 +31,22 @@
         delete IsRegistered;
         system("pause");
     }
+
+   Ida Pro decompile
+   
+
+    int main()
+    {
+      const char *v2; // edx
+      int v4; // [esp+8h] [ebp-8h]
+      v4 = 0;
+      if ( v4 == 1488 )
+      {
+        *v0 = 1;
+        v2 = "Registered";
+      }
+      else
+      {
+        v2 = "Unregistered";
+      } 
+    }
