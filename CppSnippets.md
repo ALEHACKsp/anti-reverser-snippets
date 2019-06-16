@@ -4,14 +4,23 @@
 
     void CheckRegistration(int RegNumber, bool* b)
     {
-        *b = false;
+        if (RegNumber == 1488)
+        {
+            *b = true;
+
+        }
+        else {
+            *b = false;
+        }
     }
 
     int main()
     {
         int RegNumber = 0; 
+        std::cout << "regcode: ";
+        std::cin >> RegNumber;
         bool* IsRegistered = new bool;
-        *IsRegistered = true;
+        *IsRegistered = false;
         CheckRegistration(RegNumber, IsRegistered);
         if ((*IsRegistered)) {
             std::cout << "Registered";
@@ -20,4 +29,5 @@
             std::cout << "Unregistered";
         }
         delete IsRegistered;
+        system("pause");
     }
