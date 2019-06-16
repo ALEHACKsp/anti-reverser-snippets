@@ -40,6 +40,10 @@
       const char *v2; // edx
       int v4; // [esp+8h] [ebp-8h]
       v4 = 0;
+      ...
+      sub_4010A0(std::cout, "regcode: ");
+      std::basic_istream<char,std::char_traits<char>>::operator>>(std::cin, &v4);
+    ...
       if ( v4 == 1488 )
       {
         *v0 = 1;
