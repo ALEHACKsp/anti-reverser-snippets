@@ -1,25 +1,20 @@
-    #include <iostream>
-    #include <future>
-    #include <vector>
+        #include <iostream>
+        #include <future>
+        #include <vector>
 
-    bool* CheckRegistration(int RegNumber)
-    {
-      return false;
-    }
+        void CheckRegistration(int RegNumber, bool* b)
+        {
+            *b = true;
+        }
 
-    int main()
-    {
-      int RegNumber;
-      bool* IsRegistered = new bool;
-
-      if (!&IsRegistered) {
-        int ads = 123;
-        IsRegistered = CheckRegistration(RegNumber);
-      }
-      else {
-        int ad2s = 213;
-        //exit(0);
-      }
-
-        std::cout << "Hello World!\n";
-    }
+        int main()
+        {
+            int RegNumber = 0; //!!! переменные надо инициализировать
+            bool* IsRegistered = new bool;
+            *IsRegistered = false;
+            CheckRegistration(RegNumber, IsRegistered);
+            if (!(*IsRegistered)) {
+                std::cout << "Hello World!\n";
+            }
+            delete IsRegistered;
+        }
