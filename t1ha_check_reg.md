@@ -1,15 +1,7 @@
 ## **Проверка регистрационных ключей**
 Используя `t1ha`  hash function
 
-    #include "iosfwd"           // for ostream, istream
-    #include "ostream"          // for operator<<
-    #include "process.h"        // for system
-    #include "stdint.h"         // for uint64_t
-    #include "stdlib.h"         // for rand
-    #include "string.h"         // for strlen
     #include "t1ha.h"
-    #include "vcruntime_new.h"  // for operator delete, operator new
-    #include "xstring"          // for operator>>, string
     #include <iostream>
     
     #pragma comment(lib, "t1ha-static.lib")
